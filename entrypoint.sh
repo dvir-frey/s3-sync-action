@@ -31,10 +31,7 @@ fi
 # with past/future actions.
 # https://github.com/jakejarvis/s3-sync-action/issues/1
 aws configure --profile s3-sync-action <<-EOF > /dev/null 2>&1
-${AWS_ACCESS_KEY_ID}
-${AWS_SECRET_ACCESS_KEY}
-${AWS_REGION}
-${AWS_SESSION_TOKEN}
+${AWS_ACCESS_INFO}
 text
 EOF
 
